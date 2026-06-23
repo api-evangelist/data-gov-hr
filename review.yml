@@ -1,0 +1,24 @@
+name: data.gov.hr
+description: data.gov.hr CKAN open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-hr/refs/heads/main/review.yml
+created: '2026-06-23'
+modified: '2026-06-23'
+reviews:
+  - date: '2026-06-23'
+    rating: 4
+    summary: >-
+      data.gov.hr runs CKAN 2.9.9 and exposes a live, standardized open-data catalog API. The
+      package_search endpoint was probed and returned a valid CKAN JSON response reporting a count
+      of 3,858 datasets. The critical cataloging detail is that the API is mounted under a
+      non-default /ckan/ path prefix; conventional root-level CKAN URLs return the Vue SPA HTML
+      instead of JSON. DCAT-AP RDF/XML feeds are also published for EU harvesting.
+    endpoints:
+      - url: https://data.gov.hr/ckan/api/3/action/package_search?rows=1
+        status: 200
+        note: Live CKAN API response verified; count=3858, CKAN 2.9.9.
+      - url: https://data.gov.hr/ckan/api/3/action/status_show
+        status: 200
+        note: Reports CKAN 2.9.9, default locale hr.
+      - url: https://data.gov.hr/en/
+        status: 200
+        note: Portal home (English UI).

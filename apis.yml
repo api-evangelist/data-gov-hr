@@ -1,0 +1,62 @@
+aid: data-gov-hr
+name: data.gov.hr
+description: >-
+  data.gov.hr (Portal otvorenih podataka) is the national government open-data portal for Croatia,
+  operated by the Ministry of Justice and Public Administration. It runs CKAN 2.9.9 and exposes the
+  standard CKAN Action API over approximately 3,858 datasets, supporting programmatic dataset search,
+  metadata retrieval, and resource access, plus DCAT-AP RDF/XML catalog feeds for EU harvesting. Note
+  that the CKAN API is mounted under a non-default /ckan/ path prefix; root-level CKAN URLs return the
+  Vue single-page-app HTML rather than JSON.
+kind: government
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-hr/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - DCAT-AP
+  - Government Data
+  - National Government
+  - Croatia
+  - Europe
+created: '2026-06-23'
+modified: '2026-06-23'
+specificationVersion: '0.19'
+apis:
+  - aid: data-gov-hr:catalog
+    name: data.gov.hr CKAN Action API
+    description: >-
+      CKAN Action API for data.gov.hr, a consistent JSON-over-HTTP interface over a catalog of roughly
+      3,858 datasets. Standard actions include package_search, package_show, package_list,
+      organization_list, group_list, and tag_list. Base URL https://data.gov.hr/ckan/api/3/action/
+      (English variant under /ckan/en/). The portal also publishes DCAT-AP catalog feeds at
+      /ckan/catalog.xml and /ckan/catalog.rdf.
+    humanURL: https://data.gov.hr/en/
+    baseURL: https://data.gov.hr/ckan/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://data.gov.hr/en/
+      - type: x-api-endpoint
+        url: https://data.gov.hr/ckan/api/3/action/status_show
+      - type: x-dcat-feed
+        url: https://data.gov.hr/ckan/catalog.xml
+common:
+  - type: Website
+    url: https://data.gov.hr/en/
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
