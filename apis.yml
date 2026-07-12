@@ -51,6 +51,8 @@ apis:
       - type: x-dcat-feed
         url: https://data.gov.hr/ckan/catalog.xml
 common:
+  - type: DomainSecurity
+    url: security/data-gov-hr-domain-security.yml
   - type: Website
     url: https://data.gov.hr/en/
   - type: Documentation
