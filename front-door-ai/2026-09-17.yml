@@ -1,0 +1,21 @@
+# Front Door AI Index — data-gov-hr — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: data-gov-hr
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: data.gov.hr
+  final_host: data.gov.hr
+  ownership: own
+  owner: data-gov-hr
+  shares_host_with: null
+  inherited_from: null
+  verdict: thin
+  score: null
+  host_score: null
+  density: null
+  words: 3
+  tiers: null
+  ambiguous: null
+  top_terms: null
